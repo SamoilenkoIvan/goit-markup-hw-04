@@ -61,6 +61,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+}
 /* header */
 .header {
   font-weight: 500;
@@ -76,7 +79,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  /* flex-grow: 1; */
 }
 .header-menu {
   display: flex;
@@ -84,14 +86,9 @@ img {
   margin-left: 65px;
 }
 
-/* .nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* logo */
 .logo,
 .logo-footer {
+  display: block;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -99,7 +96,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 .logo-part {
   color: var(--logo-color);
@@ -139,7 +136,6 @@ img {
 .contact-link {
   display: flex;
   align-items: center;
-  margin-right: 10px;
 }
 .auth-nav-icon {
   margin-right: 10px;
@@ -340,9 +336,6 @@ img {
   gap: 10px;
 }
 
-/* .net-item {
-} */
-
 .net-link {
   width: 44px;
   height: 44px;
@@ -416,6 +409,7 @@ img {
 .container-footer {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 .footer {
   background-color: var(--background-color);
@@ -442,7 +436,6 @@ img {
 }
 .contact-link {
   color: var(--secondary-text-color);
-  margin-bottom: 9px;
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -456,9 +449,7 @@ img {
 .address-list .contact-link:focus {
   color: var(--accent-color);
 }
-.net-links {
-  padding-top: 10px;
-}
+
 .footer-list {
   display: flex;
   justify-content: center;
@@ -492,11 +483,8 @@ img {
   background-color: var(--accent-color);
 }
 
-/* .footer-link:hover .footer-icon {
-  fill: #ffffff;
-} */
-
 /* portfolio */
+
 /* filter */
 
 .filter-list {
@@ -528,13 +516,6 @@ img {
 
 /* projects */
 
-/* .projects-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-basis: calc((100% - 60px) / 3);
-  flex-wrap: wrap;
-} */
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -543,6 +524,7 @@ img {
 }
 
 .project-item {
+  display: block;
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 60px);
@@ -550,8 +532,15 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
+.project-link {
+  display: block;
+}
 
-.project-item:hover {
+.project-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
