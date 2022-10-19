@@ -86,7 +86,18 @@ a {
   margin-left: 65px;
 }
 
-.logo,
+.logo {
+  display: block;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 24px 0;
+}
+
 .logo-footer {
   display: block;
   font-family: 'Raleway';
@@ -96,7 +107,6 @@ a {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  /* padding: 24px 0; */
 }
 .logo-part {
   color: var(--logo-color);
@@ -142,7 +152,7 @@ a {
 }
 
 .auth-nav .contact-link {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   padding: 32px 0;
 }
 .contact-link {
